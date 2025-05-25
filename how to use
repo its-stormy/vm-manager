@@ -1,0 +1,29 @@
+Créer une VM
+python vbox_manager.py create \
+    --name "MaVM" \
+    --os-type "Linux_64" \
+    --ram 2048 \
+    --cpus 2 \
+    --disk-size 20000 \
+    --disk-type VDI \
+    --iso /chemin/vers/iso \
+    --start
+
+Démarrer une VM
+python vbox_manager.py start --name "MaVM" [--headless]
+
+Arrêter une VM
+python vbox_manager.py stop --name "MaVM" [--force]
+
+Supprimer une VM
+python vbox_manager.py delete --name "MaVM"
+
+Lister les VMs
+python vbox_manager.py list
+
+Afficher les détails d'une VM
+python vbox_manager.py info --name "MaVM" --format text
+python vbox_manager.py info --name "MaVM" --format json
+
+cloner une VM
+python vbox_manager.py clone --original "VMExistante" --new-name "NouvelleVM"
