@@ -20,6 +20,6 @@
 ## 🔧 Installation
 
 ```bash
-git clone https://github.com/votre-utilisateur/vbox-automanager.git
-cd vbox-automanager
+git clone https://github.com/its-stormy/vm-manager.git
+cd vm-manager
 pip install -r requirements.txt
